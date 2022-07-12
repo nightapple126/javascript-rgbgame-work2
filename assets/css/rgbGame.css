@@ -1,0 +1,90 @@
+body {
+	background-color: #212121;
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.fa-paint-brush { transition: transform .5s; }
+.fa-paint-brush:hover { transform: rotate(-30deg); }
+
+h1 {
+	text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+	font-size: 2em;
+	color: #fff;
+	background: #212121;
+	margin: 0;
+	text-transform: capitalize;
+	padding: .5em 0;
+}
+
+#colorDisplay { font-size: 1.5em; }
+
+#stripe {
+	background: #fff;
+	height: 30px;
+	text-align: center;
+	color: #212121;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: capitalize;
+	height: 100%;
+	font-weight: 700;
+	color: #212121;
+	letter-spacing: 1px;
+	font-size: 1em;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
+button:hover,
+.selected {
+	cursor: pointer;
+	color: white;
+	background: #212121;
+	border-radius: inherit;
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1.5625em auto;
+	max-width: 550px;
+}
+
+.circle {
+	width: 20%;
+	background: #d9534f;
+	padding-bottom: 20%;
+	float: left;
+	margin: 1.25%;
+	border-radius: 50%;
+	transition: background .3s;
+	-webkit-transition: background .3s;
+	-moz-transition: background .3s;
+}
+
+@media (max-width: 600px) {
+	button,
+	span {
+		font-size: .7em;
+	}
+}
